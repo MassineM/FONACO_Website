@@ -2,11 +2,20 @@
   <div class="mainPage">
     <Navbar />
     <Carousel>
-      <CarouselSlide>hello</CarouselSlide>
-      <CarouselSlide>world</CarouselSlide>
-      <CarouselSlide>this is</CarouselSlide>
-      <CarouselSlide>my first</CarouselSlide>
-      <CarouselSlide>carousel</CarouselSlide>
+      <CarouselSlide v-for="i in [1, 2, 3, 4, 5]"
+        ><img
+          :src="require('~/assets/carouselPosts/post_' + i + '.png')"
+          alt="img"
+          class="carouselPost"
+      /></CarouselSlide>
     </Carousel>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {};
+  },
+};
+</script>

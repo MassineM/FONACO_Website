@@ -1,4 +1,4 @@
-$primaryL: #6986b8;
+$primaryL: #d8e1f1;
 $primaryM: #314363;
 $primaryD: #18253c;
 
@@ -6,8 +6,18 @@ body {
   font-family: "poppins";
 }
 
-Carousel {
-  position: relative;
+.carouselSlide{
+  display: flex;
+  justify-content: center;
+}
+
+.carouselNav{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.carouselPost{
+  width: 30%;
 }
 
 .logo{
@@ -22,8 +32,7 @@ Carousel {
 
 
 .slideSelector {
-  width: 6px;
-  height: 6px;
+  height: 10px;
   background: #000;
   border-radius: 50%;
 }
@@ -31,14 +40,10 @@ Carousel {
   background: #fff;
 }
 
-.pageSelect{
-  margin-right: 100px;
-}
-
 .navMenu {
   position: sticky;
   margin: 10px 50px;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;

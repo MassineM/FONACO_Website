@@ -1,5 +1,7 @@
 <template>
-  <div v-show="visible"><slot></slot></div>
+    <transition name="slide">
+  <div v-show="visible" class="carouselSlide"><slot></slot>
+  </div></transition></transition>
 </template>
 
 <script>
@@ -17,4 +19,31 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.slide-enter-active {
+  animation: slideIn 0.5s;
+}
+.slide-leave-active {
+  position: absolute;
+  top: 143px;
+  left: 0;
+  animation: slideOut 0.5s;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+</style>

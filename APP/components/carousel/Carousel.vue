@@ -1,15 +1,17 @@
 <template>
   <div>
     <slot></slot>
-    <button @click.prevent="prev">Prev</button>
-    <button @click.prevent="next">Next</button>
-    <div>
-      <button
-        v-for="i in nbSlides()"
-        @click="selectSlide(i - 1)"
-        class="slideSelector"
-        :class="{ active: i - 1 == index }"
-      ></button>
+    <div class="carouselNav">
+      <button @click.prevent="prev">Prev</button>
+      <div>
+        <button
+          v-for="i in nbSlides()"
+          @click="selectSlide(i - 1)"
+          class="slideSelector"
+          :class="{ active: i - 1 == index }"
+        ></button>
+      </div>
+      <button @click.prevent="next">Next</button>
     </div>
   </div>
 </template>

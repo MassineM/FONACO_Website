@@ -25,7 +25,7 @@ export default {
 }
 .slide-leave-active {
   position: absolute;
-  top: 143px;
+  top: 0;
   left: 0;
   animation: slideOut 0.5s;
 }

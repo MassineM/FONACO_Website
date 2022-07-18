@@ -1,7 +1,9 @@
 <template>
   <div>
+      <div> <a href="" class="logo">FONACO WEB AGENCY</a></div>
     <nav class="navMenu">
-      <div><span v-html="logo" class="logo"></span></div>
+      <!-- <div><span v-html="logo" class="logo"></span></div> -->
+    
       <div class="pageSelect">
         <a href="#">société</a>
         <a href="#">services</a>

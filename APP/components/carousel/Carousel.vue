@@ -2,8 +2,8 @@
   <div>
     <slot></slot>
     <div class="carouselNav">
-      <button @click.prevent="prev">Prev</button>
-      <div>
+      <button @click.prevent="prev" class="prevnext">Prev</button>
+      <div class="slideMenu">
         <button
           v-for="i in nbSlides()"
           @click="selectSlide(i - 1)"
@@ -11,7 +11,7 @@
           :class="{ active: i - 1 == index }"
         ></button>
       </div>
-      <button @click.prevent="next">Next</button>
+      <button @click.prevent="next" class="prevnext">Next</button>
     </div>
   </div>
 </template>

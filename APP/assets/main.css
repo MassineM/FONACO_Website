@@ -171,4 +171,27 @@ polygon.arrow-top {
 .next {
   background-color: #1c1d22;
   height: 99vh;
+}
+
+.titre1 {
+  color: rgb(179, 179, 179);
+  text-align: center;
+  padding: 200px 0 0 0;
+  font-size: 50px;
+}
+
+.desc {
+  text-align: center;
+  margin: 30px 200px;
+  color: white;
+  line-height: 1.6;
+}
+
+.servImg, .servContent {
+  width: 30%;
+}
+
+.servContainer {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

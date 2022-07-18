@@ -33,7 +33,5 @@ export default {
   build: {},
 
   server: {
-    host:'192.168.100.17',
-    port: 8080,
   },
 };

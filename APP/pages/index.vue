@@ -10,7 +10,10 @@
       /></CarouselSlide>
     </Carousel>
     <flech />
-    <div id="next" class="next"></div>
+    <div id="next" class="next">
+      <Aboutus />
+      <Services />
+    </div>
     
   </div>
 </template>

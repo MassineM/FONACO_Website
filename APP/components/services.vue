@@ -1,20 +1,56 @@
 <template >
+<div>
     <div class="servContainer">
         <img src="../assets/carouselPosts/123/post_1.png" alt="" class="servImg"/>
         <div class="servContent">
-            <h1 class="titre1">
-                titre 1
+            <h1 class="titre2">
+                titre 2
             </h1>
-            <p class="desc">
+            <p class="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quis magnam vitae rerum dolore reiciendis, reprehenderit ea necessitatibus quia ex deserunt et! Repudiandae eos corporis blanditiis deserunt asperiores adipisci officiis?
             </p>
         </div>
     </div>
     <div class="servContainer">
-        <div class="servContent"><h1 class="titre1">
-            titre 1
-        </h1>
-        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quis magnam vitae rerum dolore reiciendis, reprehenderit ea necessitatibus quia ex deserunt et! Repudiandae eos corporis blanditiis deserunt asperiores adipisci officiis?</p></div><img src="../assets/carouselPosts/123/post_1.png" alt="" class="servImg"/>
+        <div class="servContent">
+            <h1 class="titre2">
+                titre 2
+            </h1>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quis magnam vitae rerum dolore reiciendis, reprehenderit ea necessitatibus quia ex deserunt et! Repudiandae eos corporis blanditiis deserunt asperiores adipisci officiis?</p>
+        </div>
+        <img src="../assets/carouselPosts/123/post_5.png" alt="" class="servImg"/>
+    </div>
+    <div class="servContainer">
+        <img src="../assets/carouselPosts/123/post_2.png" alt="" class="servImg"/>
+        <div class="servContent">
+            <h1 class="titre2">
+                titre 2
+            </h1>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quis magnam vitae rerum dolore reiciendis, reprehenderit ea necessitatibus quia ex deserunt et! Repudiandae eos corporis blanditiis deserunt asperiores adipisci officiis?
+            </p>
+        </div>
+    </div>
+    <div class="servContainer">
+        <div class="servContent">
+            <h1 class="titre2">
+                titre 2
+            </h1>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quis magnam vitae rerum dolore reiciendis, reprehenderit ea necessitatibus quia ex deserunt et! Repudiandae eos corporis blanditiis deserunt asperiores adipisci officiis?</p>
+        </div>
+        <img src="../assets/carouselPosts/123/post_3.png" alt="" class="servImg"/>
+    </div>
+    <div class="servContainer">
+        <img src="../assets/carouselPosts/123/post_4.png" alt="" class="servImg"/>
+        <div class="servContent">
+            <h1 class="titre2">
+                titre 2
+            </h1>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quis magnam vitae rerum dolore reiciendis, reprehenderit ea necessitatibus quia ex deserunt et! Repudiandae eos corporis blanditiis deserunt asperiores adipisci officiis?
+            </p>
+        </div>
+    </div>
     </div>
 </template>
 <script>

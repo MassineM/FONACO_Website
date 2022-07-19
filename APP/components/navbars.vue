@@ -2,7 +2,7 @@
   <div>
    
     <nav>
-      <div><a href="" class="logo">FONACO WEB AGENCY</a></div> 
+     
   <ul class="menu">
        
     <li><a href="#!">Home</a></li>

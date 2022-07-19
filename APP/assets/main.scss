@@ -4,6 +4,7 @@ $primaryD: #18253c;
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
   font-family: "Prompt";
+  scroll-behavior: smooth;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Varela+Round");
@@ -29,10 +30,12 @@ html {
 }
 
 nav{
+  height: 12vh;
   display: flex;
   position: fixed;
   width: 100%;
   z-index: 2;
+  background-color: rgba($color: #232222, $alpha: 0.3);
 }
 
 .menu {
@@ -40,8 +43,8 @@ nav{
   justify-content: center;
   align-items: center;
   max-width: 720px;
-  margin: 0 0 0 auto;
-  height: 10vh;
+  margin: 0 auto 0 auto;
+  height: 15vh;
   list-style: none;
 }
 
@@ -210,6 +213,14 @@ polygon {
 
 }
 
+.titre2{
+  color: rgb(179, 179, 179);
+  text-align: center;
+  padding: 50px 0 10px 0;
+  font-size: 50px;
+
+}
+
 .desc{
   text-align: center;
   margin: 30px 200px;
@@ -217,11 +228,24 @@ polygon {
   line-height: 1.6;
 }
 
+.text{
+  margin: 30px;
+  color: white;
+  line-height: 1.6;
+}
+
 .servImg,.servContent{
   width: 30%;
+  height: 30%;
+  padding: 5%;
 }
 
 .servContainer{
   display: flex;
   justify-content: center;
+}
+
+.index{
+position: absolute;
+height: 100vh;
 }

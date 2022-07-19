@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Varela+Round");
 body {
   font-family: "Prompt";
+  scroll-behavior: smooth;
 }
 
 html {
@@ -25,10 +26,12 @@ html {
 }
 
 nav {
+  height: 12vh;
   display: flex;
   position: fixed;
   width: 100%;
   z-index: 2;
+  background-color: rgba(35, 34, 34, 0.3);
 }
 
 .menu {
@@ -36,8 +39,8 @@ nav {
   justify-content: center;
   align-items: center;
   max-width: 720px;
-  margin: 0 0 0 auto;
-  height: 10vh;
+  margin: 0 auto 0 auto;
+  height: 15vh;
   list-style: none;
 }
 
@@ -180,6 +183,13 @@ polygon.arrow-top {
   font-size: 50px;
 }
 
+.titre2 {
+  color: rgb(179, 179, 179);
+  text-align: center;
+  padding: 50px 0 10px 0;
+  font-size: 50px;
+}
+
 .desc {
   text-align: center;
   margin: 30px 200px;
@@ -187,11 +197,24 @@ polygon.arrow-top {
   line-height: 1.6;
 }
 
+.text {
+  margin: 30px;
+  color: white;
+  line-height: 1.6;
+}
+
 .servImg, .servContent {
   width: 30%;
+  height: 30%;
+  padding: 5%;
 }
 
 .servContainer {
   display: flex;
   justify-content: center;
+}
+
+.index {
+  position: absolute;
+  height: 100vh;
 }/*# sourceMappingURL=main.css.map */

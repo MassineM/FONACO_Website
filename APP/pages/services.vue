@@ -1,5 +1,5 @@
 <template>
-  <div class="mainPage">
+  <div >
     <navbars />
     <!-- <Carousel>
       <CarouselSlide v-for="i in [1, 2, 3]"
@@ -9,11 +9,9 @@
           class="carouselPost"
       /></CarouselSlide>
     </Carousel> -->
-    <div class="index">
-      <h1 class="titre2">Services</h1>
+      <h1 class="titre1">Services</h1>
       
       <Services />
-    </div>
     
   </div>
 </template>

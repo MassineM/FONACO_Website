@@ -315,3 +315,23 @@ justify-content: center;
   display: flex;
   justify-content: space-around;
 }
+
+.personPic{
+  width: 300px;
+  height: 300px;
+  &:hover{
+    width: 350px;
+    height: 350px;
+  }
+}
+
+.team{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.personDesc{
+  position: absolute;
+}

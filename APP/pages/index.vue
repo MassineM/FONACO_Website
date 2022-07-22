@@ -17,7 +17,7 @@
       <p class="desc">FONACO est une agence de communication digitale pour des convictions innovantes et contribue au
         rayonnement des marques et à la transformation des entreprises dans un monde digitalisé.
 
-        Du conseil au développement, de la création à l‘acquisition de trafic en passant par le print, DigitalMa vous
+        Du conseil au développement, de la création à l'acquisition de trafic en passant par le print, FONACO vous
         propose une offre globale et vous accompagne tout au long de vos projets.
 
         Nous mobilisons des expertises créatives et techniques en nous appuyant sur une démarche projet novatrice.</p>
@@ -26,7 +26,7 @@
     <flech />
     <div id="next" class="next">
       <Aboutus />
-      <h1 class="titre2">Nos Services</h1>
+      <h1 class="titre2">Nos services</h1>
 
       <indexservice />
     </div>

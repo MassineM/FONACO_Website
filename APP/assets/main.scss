@@ -1,6 +1,10 @@
 $primaryL: #d8e1f1;
-$primaryM: #314363;
-$primaryD: #18253c;
+$primaryM: #7d9ac9;
+$primaryD: #455879;
+$secondaryL: #dfd3ac;
+$secondaryM: #d3ad5c;
+$secondaryD: #a08148;
+
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
   font-family: "Prompt";
@@ -25,7 +29,7 @@ body,
 html {
   width: 100%;
   height: 100%;
-  background: #1c1d22;
+  background: $primaryL;
 
 }
 
@@ -35,7 +39,7 @@ nav{
   position: fixed;
   width: 100%;
   z-index: 2;
-  background-color: rgba($color: #232222, $alpha: 0.3);
+  background-color:  rgba($color: #000000, $alpha: 0.5);
 }
 
 .menu {
@@ -56,7 +60,7 @@ nav{
 
   a {
     font-size: 22px;
-    color: rgb(255, 255, 255);
+    color: #fff;
     text-decoration: none;
     transition: all 0.45s;
   }
@@ -67,7 +71,7 @@ nav{
   }
 
   &:hover a {
-    color: #d94f5c;
+    color: $secondaryM;
   }
 
   &:not(:last-child) {
@@ -146,8 +150,8 @@ nav{
 
 
 
-.content {
-  z-index: 2;
+.arrow {
+
   position: absolute;
   left: 50%;
  bottom: 2%;
@@ -156,7 +160,7 @@ nav{
   p {
     margin: 0 0 20px;
     text-align: center;
-    color: #fff;
+    color: $primaryD;
     font-size: large;
   }
   
@@ -170,7 +174,7 @@ nav{
   &:hover {
     
     polygon {
-      fill: #FFF;
+      fill: $primaryM;
       transition: all .2s ease-out;
 
       &.arrow-bottom {
@@ -188,7 +192,7 @@ nav{
 }
 
 polygon {
-  fill: #FFF;
+  fill: $primaryD;
   transition: all .2s ease-out;
     
   &.arrow-middle {
@@ -201,12 +205,11 @@ polygon {
 	 
 }
 .next{
-  background-color: #1c1d22;
-  height: 99vh;
+  height: 100vh;
 }
 
 .titre1{
-  color: rgb(179, 179, 179);
+  color: $primaryD;
   text-align: center;
   padding: 200px 0 0 0;
   font-size: 50px;
@@ -214,30 +217,32 @@ polygon {
 }
 
 .titre2{
-  color: rgb(179, 179, 179);
+  color: $primaryD;
   text-align: center;
   padding: 50px 0 10px 0;
   font-size: 50px;
 
 }
 
-.desc{
-  text-align: center;
-  margin: 30px 200px;
-  color: white;
-  line-height: 1.6;
-}
 
 .text{
   margin: 30px;
-  color: white;
+  color: $primaryD;
   line-height: 1.6;
 }
 
+.desc{
+  @extend .text;
+  z-index: 2;
+  text-align: center;
+  margin: 30px 25%;
+  font-size: 20px;
+  font-weight: 500;
+}
 .servImg,.servContent{
   width: 30%;
   height: 30%;
-  padding: 5%;
+  padding: 2%;
 }
 
 .servContainer{
@@ -246,6 +251,67 @@ polygon {
 }
 
 .index{
-position: absolute;
+z-index: 2;
 height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.gtitre{
+  z-index: 2;
+  color: $primaryD;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+ font-weight: 700;
+}
+.servImg{
+  width: 20%;
+  height: 20%;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-15 {
+  background: #000;
+ color: #fff;
+ z-index: 1;
+}
+.btn-15:after {
+ position: absolute;
+ content: "";
+ width: 0;
+ height: 100%;
+ top: 0;
+ right: 0;
+ z-index: -1;
+  background: #e0e5ec;
+ transition: all 0.3s ease;
+}
+.btn-15:hover {
+ color: #000;
+}
+.btn-15:hover:after {
+ left: 0;
+ width: 100%;
+}
+.btn-15:active {
+ top: 2px;
+}
+
+.btncon{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }

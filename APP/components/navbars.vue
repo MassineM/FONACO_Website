@@ -5,10 +5,10 @@
      
   <ul class="menu">
        
-    <li><a href="#!">Home</a></li>
-    <li><a href="#!">About</a></li>
+    <li><a href="/">Accueil</a></li>
+    <li><a href="services">Services</a></li>
+    <li><a href="#!">Equipe</a></li>
     <li><a href="#!">Contact</a></li>
-    <li><a href="#!">Faq</a></li>
   </ul>
     </nav>
   </div>

@@ -30,7 +30,7 @@ nav {
   display: flex;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 50;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -174,7 +174,7 @@ polygon.arrow-top {
   height: 100vh;
 }
 
-.titre1 {
+.titre1, .titreServices, .titre2 {
   color: #455879;
   text-align: center;
   padding: 200px 0 0 0;
@@ -182,19 +182,24 @@ polygon.arrow-top {
 }
 
 .titre2 {
-  color: #455879;
-  text-align: center;
   padding: 50px 0 10px 0;
-  font-size: 50px;
 }
 
-.text, .desc {
+.titreServices {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.text, .desc, .carouselText {
   margin: 30px;
   color: #455879;
   line-height: 1.6;
 }
 
-.desc {
+.desc, .carouselText {
   z-index: 2;
   text-align: center;
   margin: 30px 25%;
@@ -239,6 +244,7 @@ polygon.arrow-top {
   width: 130px;
   height: 40px;
   padding: 10px 25px;
+  margin: 50px 0;
   border: 2px solid #000;
   font-family: "Lato", sans-serif;
   font-weight: 500;
@@ -289,6 +295,7 @@ polygon.arrow-top {
 .personPic {
   width: 300px;
   height: 300px;
+  transition: all 0.3s ease;
 }
 .personPic:hover {
   width: 350px;
@@ -296,12 +303,18 @@ polygon.arrow-top {
 }
 
 .team {
-  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
 .personDesc {
   position: absolute;
+}
+
+.carouselText {
+  position: absolute;
+  top: 50%;
+  margin: 0 20%;
+  z-index: 4;
 }/*# sourceMappingURL=main.css.map */

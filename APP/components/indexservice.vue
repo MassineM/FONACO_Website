@@ -12,9 +12,6 @@
         </div>
         
     </div>
-    <div class="btncon">
- <button class="custom-btn btn-15">Voir Plus</button>
- </div>
     </div>
 </template>
 <script>

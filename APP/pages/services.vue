@@ -1,23 +1,43 @@
 <template>
   <div >
     <navbars />
-    <!-- <Carousel>
-      <CarouselSlide v-for="i in [1, 2, 3]"
+    <Carousel>
+      <CarouselSlide v-for="post in posts" :key="post.key"
         ><img
-          :src="require('~/assets/carouselPosts/post_' + i + '.JPG')"
+          :src="require('~/assets/carouselPosts/post_'+post.key+'.JPG')"
           alt="img"
           class="carouselPost"
-      /></CarouselSlide>
-    </Carousel> -->
-      <h1 class="titre1">Services</h1>
+      />
+      <p v-html="post.text" class="carouselText"></p></CarouselSlide>
+    </Carousel>
+      <h1 class="titreServices">Services</h1>
       
-      <Services />
+      <!-- <Services /> -->
     
   </div>
 </template>
 
 <script>
-
+export default{
+  data: function () {
+    return {
+      posts: [
+        {
+          key: 1,
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorum debitis doloremque maiores architecto ut perferendis error incidunt neque, magni eligendi sint a, mollitia esse rem eveniet beatae laborum fugiat."
+        },
+        {
+          key: 2,
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorum debitis doloremque maiores architecto ut perferendis error incidunt neque, magni eligendi sint a, mollitia esse rem eveniet beatae laborum fugiat."
+        },
+        {
+          key: 3,
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorum debitis doloremque maiores architecto ut perferendis error incidunt neque, magni eligendi sint a, mollitia esse rem eveniet beatae laborum fugiat."
+        },
+      ]
+    }
+  }
+}
 
 </script>
 <style></style>

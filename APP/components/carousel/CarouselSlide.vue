@@ -1,7 +1,9 @@
 <template>
-    <transition name="slide">
-  <div v-show="visible" class="carouselSlide"><slot></slot>
-  </div></transition></transition>
+  <transition :name="transition">
+    <div v-show="visible" class="carouselSlide">
+      <slot></slot>
+    </div>
+  </transition>
 </template>
 
 <script>
@@ -11,7 +13,12 @@ export default {
       index: 0,
     };
   },
+  mounted: function() {
+  },
   computed: {
+    transition() {
+      return 'slide-' + this.$parent.direction
+    },
     visible() {
       return this.index === this.$parent.index;
     },
@@ -20,30 +27,66 @@ export default {
 </script>
 
 <style>
-.slide-enter-active {
-  animation: slideIn 0.5s;
+.slide-right-enter-active {
+  animation: slideRightIn 0.5s;
 }
-.slide-leave-active {
+
+.slide-right-leave-active {
   position: absolute;
   top: 0;
   left: 0;
-  animation: slideOut 0.5s;
+  animation: slideRightOut 0.5s;
 }
 
-@keyframes slideIn {
+.slide-left-enter-active {
+  animation: slideLeftIn 0.5s;
+}
+
+.slide-left-leave-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: slideLeftOut 0.5s;
+}
+
+@keyframes slideRightIn {
   from {
     transform: translateX(100%);
   }
+
   to {
     transform: translateX(0);
   }
 }
-@keyframes slideOut {
+
+@keyframes slideRightOut {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-100%);
+  }
+}
+
+
+@keyframes slideLeftIn {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideLeftOut {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
   }
 }
 </style>

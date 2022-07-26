@@ -11,8 +11,6 @@
       <p v-html="post.text" class="carouselText"></p></CarouselSlide>
     </Carousel>
       <h1 class="titreServices">Services</h1>
-      
-      <!-- <Services /> -->
     
   </div>
 </template>

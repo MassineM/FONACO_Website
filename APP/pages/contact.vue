@@ -2,7 +2,7 @@
     <div>
         <navbars />
         <h1 class="titre1">Contact</h1>
-        <span v-html="mail" class="icon"> </span>
+        <span v-html="insta" class="icon"> </span>
         <a href="mailto:soufianefouli10@gmail.com" target="_blank">soufianefouli10@gmail.com</a>
     </div>
 </template>

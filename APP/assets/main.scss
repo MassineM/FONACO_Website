@@ -42,18 +42,21 @@ nav {
   width: 100%;
   z-index: 50;
   transition: all 0.4s ease;
-  ul{
-    li{
-      a{
+
+  ul {
+    li {
+      a {
         color: $primaryD;
       }
     }
   }
+
   &.onScroll {
     background-color: rgba($color: $primaryD, $alpha: 0.7);
-    ul{
-      li{
-        a{
+
+    ul {
+      li {
+        a {
           color: #fff;
         }
       }
@@ -87,18 +90,19 @@ nav {
 
   &:hover {
     // background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
-background: radial-gradient(rgba($secondaryD,0.2) 50%,transparent,transparent);
-// height: 10px;
-a {
-  color: $secondaryM;
-}
+    background: radial-gradient(rgba($secondaryD, 0.2) 50%, transparent, transparent);
+
+    // height: 10px;
+    a {
+      color: $secondaryM;
+    }
   }
 
   &:not(:last-child) {
     margin-right: 30px;
   }
 
-  a:active{
+  a:active {
     color: $secondaryL;
 
   }
@@ -364,27 +368,41 @@ polygon {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  .person {
+    .personDesc {
+      position: absolute;
+      opacity: 0;
+      transform: translateY(-220px) translateX(120px);
+      transition: all 0.3s ease;
+      .personName{
+        color: $primaryL;
+        font-size: 20px;
+      font-weight: 550;
+    }
+    .personFct{
+      color: $primaryL;
+    font-weight: 450;
+  }
+    }
 
-.personDesc {
-  position: absolute;
-  display: none;
-  transform: translateY(-220px) translateX(120px);
-  transition: all 0.3s ease;
-}
-.personPic {
-  width: 300px;
-  height: 300px;
-  transition: all 0.3s ease;
-  margin: 50px;
+    .personPic {
+      width: 300px;
+      height: 300px;
+      transition: all 0.3s ease;
+      margin: 50px;
+    }
 
-  &:hover {
-    color: rgba($color: #000000, $alpha: 0.3);
-    width: 350px;
-    height: 350px;
-    +.personDesc{
-      display: block;
-      transform: translateY(-250px) translateX(120px);
+    &:hover {
+      .personPic{
+      width: 350px;
+      height: 350px;
+      filter: brightness(50%);
+      }
+
+      .personDesc {
+        opacity: 1;
+        transform: translateY(-250px) translateX(120px);
+      }
     }
   }
 }
@@ -398,5 +416,5 @@ polygon {
 }
 
 .icon {
-  width: 10%;
+  width: 5vw;
 }

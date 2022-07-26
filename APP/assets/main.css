@@ -310,27 +310,34 @@ polygon.arrow-top {
   justify-content: center;
   align-items: center;
 }
-
-.personDesc {
+.team .person .personDesc {
   position: absolute;
-  display: none;
+  opacity: 0;
   transform: translateY(-220px) translateX(120px);
   transition: all 0.3s ease;
 }
-
-.personPic {
+.team .person .personDesc .personName {
+  color: #d8e1f1;
+  font-size: 20px;
+  font-weight: 550;
+}
+.team .person .personDesc .personFct {
+  color: #d8e1f1;
+  font-weight: 450;
+}
+.team .person .personPic {
   width: 300px;
   height: 300px;
   transition: all 0.3s ease;
   margin: 50px;
 }
-.personPic:hover {
-  color: rgba(0, 0, 0, 0.3);
+.team .person:hover .personPic {
   width: 350px;
   height: 350px;
+  filter: brightness(50%);
 }
-.personPic:hover + .personDesc {
-  display: block;
+.team .person:hover .personDesc {
+  opacity: 1;
   transform: translateY(-250px) translateX(120px);
 }
 
@@ -342,5 +349,5 @@ polygon.arrow-top {
 }
 
 .icon {
-  width: 10%;
+  width: 5vw;
 }/*# sourceMappingURL=main.css.map */

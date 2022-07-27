@@ -2,14 +2,14 @@
   <div>
     <nav :class="{ 'onScroll': !view.topOfPage}">
       <ul class="menu">
-        <li><a href="/" class="myA"
-          :class="{active: currentRouteName == 'index' }">Accueil</a></li>
-        <li><a href="services"
-          :class="{active: currentRouteName == 'services' }">Services</a></li>
-        <li><a href="equipe"
-          :class="{active: currentRouteName == 'equipe' }">Equipe</a></li>
-        <li><a href="contact"
-          :class="{active: currentRouteName == 'contact' }">Contact</a></li>
+        <li><a
+          :class="{active: currentRouteName == 'index' }" href="/">Accueil</a></li>
+        <li><a
+          :class="{active: currentRouteName == 'services' }" href="services">Services</a></li>
+        <li><a
+          :class="{active: currentRouteName == 'equipe' }" href="equipe">Equipe</a></li>
+        <li><a
+          :class="{active: currentRouteName == 'contact' }" href="contact">Contact</a></li>
       </ul>
     </nav>
   </div>

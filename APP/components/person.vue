@@ -3,7 +3,7 @@
     <div class="team">
         <div class="person">
             <img src="../assets/carouselPosts/123/post_1.png" alt="" class="personPic">
-            <div class="personDesc">
+           <div class="personDesc">
                 <p class="personName">person one</p>
                 <p class="personFct">graphic designer</p>
             </div>

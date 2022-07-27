@@ -54,8 +54,11 @@ nav.onScroll ul li a {
 }
 
 .menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 125px;
-  height: auto;
+  height: 40px;
   transition: background-position-x 0.9s linear;
   text-align: center;
   transition: all 0.45s;
@@ -65,17 +68,17 @@ nav.onScroll ul li a {
   text-decoration: none;
   transition: all 0.45s;
 }
+.menu li a:active {
+  color: #000;
+}
 .menu li:hover {
-  background: radial-gradient(rgba(160, 129, 72, 0.2) 50%, transparent, transparent);
+  background: radial-gradient(rgba(223, 211, 172, 0.2) 40%, transparent, transparent);
 }
 .menu li:hover a {
   color: #d3ad5c;
 }
 .menu li:not(:last-child) {
   margin-right: 30px;
-}
-.menu li a:active {
-  color: #dfd3ac;
 }
 
 .logo {
@@ -205,7 +208,7 @@ polygon.arrow-top {
   z-index: 3;
 }
 
-.text, .desc, .carouselText {
+.text, .contactInfo, .desc, .carouselText {
   margin: 30px;
   color: #455879;
   line-height: 1.6;
@@ -348,6 +351,28 @@ polygon.arrow-top {
   z-index: 4;
 }
 
-.icon {
-  width: 5vw;
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 0 0;
+}
+
+.contactSubContainer {
+  display: flex;
+  align-items: center;
+  margin: 0 0 50px 0;
+  width: 600px;
+  border: 2px solid rgb(183, 183, 183);
+  border-radius: 20px;
+}
+
+.contactIcon {
+  margin: 0 25px;
+}
+
+.contactInfo {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */

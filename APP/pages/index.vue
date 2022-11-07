@@ -7,13 +7,12 @@
     <div class="index">
       <h1 class="gtitre">FONACO WEB AGENCY</h1>
       <p class="desc">
-        FONACO est une agence de communication digitale pour des convictions
-        innovantes et contribue au rayonnement des marques et à la
-        transformation des entreprises dans un monde digitalisé. Du conseil au
-        développement, de la création à l'acquisition de trafic en passant par
-        le print, FONACO vous propose une offre globale et vous accompagne tout
-        au long de vos projets. Nous mobilisons des expertises créatives et
-        techniques en nous appuyant sur une démarche projet novatrice.
+        FONACO est une agence de communication pour l'innovation dans le
+        rayonnement des marques et dans l'introduction des entreprises à un
+        monde digitalisé. Du conseil au développement, de la création à
+        l'acquisition de trafic en passant par la gestion complète de la
+        communication et l'affichage, FONACO vous propose des offres sur mesure
+        et vous accompagne tout au long de vos projets.
       </p>
       <p class="desc animate-text">PLUS HAUT ET PLUS LOIN AVEC FONACO</p>
     </div>

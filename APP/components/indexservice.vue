@@ -1,21 +1,14 @@
-<template >
-<div>
+<template>
+  <div>
     <div class="servContainer">
-        <img src="../assets/carouselPosts/123/post_1.png" alt="" class="servImg"/>
-        <div class="servContent">
-            <h1 class="titre2">
-                titre 2
-            </h1>
-            <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quis magnam vitae rerum dolore reiciendis, reprehenderit ea necessitatibus quia ex deserunt et! Repudiandae eos corporis blanditiis deserunt asperiores adipisci officiis?
-            </p>
-        </div>
-        
+      <img src="../assets/carouselPosts/123/b1.jpeg" alt="" class="servImg" />
+      <div class="servContent">
+        <h1 class="titre2">Impressions</h1>
+        <p class="text">
+          Conceptions et impressions sur différents types de supports.
+        </p>
+      </div>
     </div>
-    </div>
+  </div>
 </template>
-<script>
-
-
-</script>
-
+<script></script>

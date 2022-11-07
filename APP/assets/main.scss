@@ -5,7 +5,7 @@ $secondaryL: #dfd3ac;
 $secondaryM: #d3ad5c;
 $secondaryD: #a08148;
 
-@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
   font-family: "Prompt";
@@ -32,7 +32,6 @@ html {
   width: 100%;
   height: 100%;
   background: $primaryL;
-
 }
 
 nav {
@@ -86,29 +85,24 @@ nav {
 
   a {
     font-size: 22px;
-    // color: #fff;
     text-decoration: none;
     transition: all 0.45s;
-    &:active{
-      color: #000;
-
-  }
+    &.active {
+      color: $secondaryM;
+    }
   }
 
   &:hover {
-    // background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
-    background: radial-gradient(rgba($secondaryL, 0.2) 40%, transparent, transparent);
-
-    // height: 10px;
-    a {
-      color: $secondaryM;
-    }
+    background: radial-gradient(
+      rgba($secondaryL, 0.2) 40%,
+      transparent,
+      transparent
+    );
   }
 
   &:not(:last-child) {
     margin-right: 30px;
   }
-
 }
 
 .logo {
@@ -123,7 +117,6 @@ nav {
   height: 7vh;
   list-style: none;
   font-weight: 700;
-
 }
 
 .logo:hover {
@@ -153,9 +146,6 @@ nav {
   z-index: 1;
 }
 
-
-
-
 .slideSelector {
   height: 13px;
   width: 13px;
@@ -171,7 +161,6 @@ nav {
 
 .slideMenu {
   padding-top: 70vh;
-
 }
 
 .prevnext {
@@ -179,12 +168,7 @@ nav {
   width: 40%;
 }
 
-
-
-
-
 .arrow {
-
   position: absolute;
   left: 50%;
   bottom: 2%;
@@ -196,7 +180,6 @@ nav {
     color: $primaryD;
     font-size: large;
   }
-
 }
 
 /* Arrow & Hover Animation */
@@ -205,10 +188,9 @@ nav {
   height: 65px;
 
   &:hover {
-
     polygon {
       fill: $primaryM;
-      transition: all .2s ease-out;
+      transition: all 0.2s ease-out;
 
       &.arrow-bottom {
         transform: translateY(-18px);
@@ -217,25 +199,21 @@ nav {
       &.arrow-top {
         transform: translateY(18px);
       }
-
     }
-
   }
-
 }
 
 polygon {
   fill: $primaryD;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
 
   &.arrow-middle {
     opacity: 0.75;
   }
 
   &.arrow-top {
-    opacity: 0.5
+    opacity: 0.5;
   }
-
 }
 
 .next {
@@ -245,15 +223,13 @@ polygon {
 .titre1 {
   color: $primaryD;
   text-align: center;
-  padding: 200px 0 0 0;
+  padding: 170px 0 0 0;
   font-size: 50px;
-
 }
 
 .titre2 {
   @extend .titre1;
   padding: 50px 0 10px 0;
-
 }
 
 .titreServices {
@@ -285,6 +261,11 @@ polygon {
   width: 30%;
   height: 30%;
   padding: 2%;
+  padding-top: 50px;
+}
+
+.servImg {
+  width: 500px;
 }
 
 .servContainer {
@@ -309,10 +290,10 @@ polygon {
   font-weight: 700;
 }
 
-.servImg {
-  width: 20%;
-  height: 20%;
-}
+// .servImg {
+//   width: 20%;
+//   height: 20%;
+// }
 
 .custom-btn {
   width: 130px;
@@ -320,7 +301,7 @@ polygon {
   padding: 10px 25px;
   margin: 50px 0;
   border: 2px solid #000;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
@@ -366,7 +347,6 @@ polygon {
   justify-content: space-around;
 }
 
-
 .team {
   display: flex;
   justify-content: center;
@@ -377,15 +357,15 @@ polygon {
       opacity: 0;
       transform: translateY(-220px) translateX(120px);
       transition: all 0.3s ease;
-      .personName{
+      .personName {
         color: $primaryL;
         font-size: 20px;
-      font-weight: 550;
-    }
-    .personFct{
-      color: $primaryL;
-    font-weight: 450;
-  }
+        font-weight: 550;
+      }
+      .personFct {
+        color: $primaryL;
+        font-weight: 450;
+      }
     }
 
     .personPic {
@@ -396,10 +376,9 @@ polygon {
     }
 
     &:hover {
-      .personPic{
-      width: 350px;
-      height: 350px;
-      filter: brightness(50%);
+      .personPic {
+        transform: scale(calc(7 / 6));
+        filter: brightness(50%);
       }
 
       .personDesc {
@@ -418,14 +397,14 @@ polygon {
   z-index: 4;
 }
 
-.contactContainer{
+.contactContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0 0 0;
+  padding: 60px 0 0 0;
 }
 
-.contactSubContainer{
+.contactSubContainer {
   display: flex;
   align-items: center;
   margin: 0 0 50px 0;
@@ -434,13 +413,17 @@ polygon {
   border-radius: 20px;
 }
 
-.contactIcon{
+.contactIcon {
   margin: 0 25px;
 }
 
-.contactInfo{
+.contactInfo {
   @extend .text;
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
+}
+
+.carouselContainer {
+  overflow: hidden;
 }

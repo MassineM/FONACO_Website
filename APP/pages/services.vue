@@ -1,41 +1,39 @@
 <template>
-  <div >
+  <div>
     <navbars />
-    <Carousel>
+    <Carousel class="carouselContainer">
       <CarouselSlide v-for="post in posts" :key="post.key"
         ><img
-          :src="require('~/assets/carouselPosts/post_'+post.key+'.JPG')"
+          :src="require('~/assets/carouselPosts/post_' + post.key + '.JPG')"
           alt="img"
-          class="carouselPost"
-      />
-      <p v-html="post.text" class="carouselText"></p></CarouselSlide>
+          class="carouselPost" />
+        <p v-html="post.text" class="carouselText"></p
+      ></CarouselSlide>
     </Carousel>
-      <h1 class="titreServices">Services</h1>
-    
+    <h1 class="titreServices">Services</h1>
   </div>
 </template>
 
 <script>
-export default{
+export default {
   data: function () {
     return {
       posts: [
         {
           key: 1,
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorum debitis doloremque maiores architecto ut perferendis error incidunt neque, magni eligendi sint a, mollitia esse rem eveniet beatae laborum fugiat."
+          text: "FONACO vous propose différentes formes de communication et promotion pour répondre à vos besoins et vos objectifs tout en respectant votre budget.",
         },
         {
           key: 2,
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorum debitis doloremque maiores architecto ut perferendis error incidunt neque, magni eligendi sint a, mollitia esse rem eveniet beatae laborum fugiat."
+          text: "Impression sur multiples supports : carte de visite, dépliant, brochure, magazine, bâche, panneau ...",
         },
         {
           key: 3,
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorum debitis doloremque maiores architecto ut perferendis error incidunt neque, magni eligendi sint a, mollitia esse rem eveniet beatae laborum fugiat."
+          text: "Notre équipe se consacre entièrement pour vous fournir la conception graphique avec l'exigence et la méthodologie nécessaire qui vous convient.",
         },
-      ]
-    }
-  }
-}
-
+      ],
+    };
+  },
+};
 </script>
 <style></style>
